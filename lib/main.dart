@@ -1,6 +1,7 @@
 import 'package:english_words/english_words.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'pages/login.dart';
 
 void main() {
   runApp(MyApp());
@@ -17,9 +18,9 @@ class MyApp extends StatelessWidget {
         title: 'Namer App',
         theme: ThemeData(
           useMaterial3: true,
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.lightGreen),
+          colorScheme: ColorScheme.fromSeed(seedColor: Colors.black54),
         ),
-        home: MyHomePage(),
+        home: LoginScreen(),
       ),
     );
   }
@@ -46,7 +47,7 @@ class MyAppState extends ChangeNotifier {
   }
 }
 
-
+//This is a class which you can display at Home : Class in main 
 class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
