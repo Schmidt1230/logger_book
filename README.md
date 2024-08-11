@@ -1,16 +1,14 @@
-# logger_book
+# LoggerBook
 
-A new Flutter project.
+Cross-platform application for Employers to and Employees to manage their shifts. And also display the amount made by each employee depending on the rate they are employed by. I am also aiming to add media management where employees can upload certain images or videos during their shift which they think is important and relevant for their supervisor to see. 
 
-## Getting Started
+## Goal
+The goal of this project is for me to learn cross-platform application development a bit better and understand core industry concepts such as API requests. 
 
-This project is a starting point for a Flutter application.
+## Technologies used:
 
-A few resources to get you started if this is your first Flutter project:
+- Front-end: Flutter
+- Back-end: NodeJS
+- Database: MongoDB
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img src = "https://raw.githubusercontent.com/tandpfun/skill-icons/65dea6c4eaca7da319e552c09f4cf5a9a8dab2c8/icons/Flutter-Light.svg" height = 50 width = 50><img src = "https://raw.githubusercontent.com/tandpfun/skill-icons/65dea6c4eaca7da319e552c09f4cf5a9a8dab2c8/icons/NodeJS-Light.svg" height = 50 width = 50><img src = "https://raw.githubusercontent.com/tandpfun/skill-icons/65dea6c4eaca7da319e552c09f4cf5a9a8dab2c8/icons/MongoDB.svg" height = 50 width = 50>
