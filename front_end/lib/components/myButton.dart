@@ -15,11 +15,15 @@ class MyButton  extends StatelessWidget{
       child : 
       ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                  foregroundColor: Colors.black,
+                  foregroundColor: Colors.lightBlueAccent,
                   backgroundColor: Colors.white,
                   ),
                   onPressed: () => print('pressed'),
-                  child: Text(text),
+                  child: Text(text,
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold
+                  ),
+                  ),
                 ),
     );
   }

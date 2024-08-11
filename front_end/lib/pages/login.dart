@@ -24,14 +24,25 @@ class LoginScreen extends StatelessWidget {
             
             children: <Widget>[
               //Text wdiget to display nice message
-              Text('LoggerBook',
-              style: TextStyle(
-                color: Colors.black,
-                fontSize: 24,
-                ),),
+              Card(elevation: 20 ,
+              color: Colors.lightBlueAccent,
+              child: Padding(
+                padding: const EdgeInsets.all(15.0),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: <Widget>[
+                    const SizedBox(height: 8),
+                    const Text('LoggerBook',
+                    style: TextStyle(fontSize: 19,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,),)
+                  ],
+                  ),
+                  ),
+              ),
 
               const SizedBox(height: 20),
-
+              
               //Username TextBox
               TextBox(
                 controller: usernameController,

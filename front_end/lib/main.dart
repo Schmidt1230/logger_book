@@ -1,5 +1,6 @@
 import 'package:english_words/english_words.dart';
 import 'package:flutter/material.dart';
+import 'package:logger_book/pages/home.dart';
 import 'package:provider/provider.dart';
 import 'pages/login.dart';
 
@@ -18,9 +19,9 @@ class MyApp extends StatelessWidget {
         title: 'Namer App',
         theme: ThemeData(
           useMaterial3: true,
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.black54),
+          colorScheme: ColorScheme.fromSeed(seedColor: Colors.lightBlueAccent),
         ),
-        home: LoginScreen(),
+        home: HomeScreen(),
       ),
     );
   }
