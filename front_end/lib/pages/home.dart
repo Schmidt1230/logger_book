@@ -11,19 +11,26 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: GNav(
-        activeColor: Colors.lightBlueAccent,
+        backgroundColor: Colors.lightBlueAccent,
+        gap: 3,
         tabs: const [
           GButton(icon: Icons.home,
                   text: "Home",
           ),
           GButton(icon: Icons.camera_alt,
-                  text: "Camera",),
-          GButton(icon: Icons.view_timeline_outlined,
-                  text: "Shifts"),
-          GButton(icon: Icons.attach_money,
-                  text: "Earning",),
+                  text: "Camera",
+                  ),
+         GButton(icon: Icons.view_timeline_outlined,
+                  text: "Shifts"
+                  ),
+          
+          /*GButton(icon: Icons.attach_money,
+                  //text: "Earning",
+                  ),
+          */
           GButton(icon: Icons.logout,
-          text: "Logout",)
+          text: "Logout",
+          )
 
       ],),
     );
