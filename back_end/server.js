@@ -1,25 +1,18 @@
 const express = require('express')
-const mongoose = require('mongoose')
-const dotenv = require('dotenv')
+
+//Automatically called when server is initiated
+const database = require('./config/database')
 
 
-const app = express();
+const app = require('./app');
 
+app.get('/',(req,res)=>{
+    res.send("Hello world")
+})
 
-dotenv.config();
-
-
-async function connect(){
-    try {
-        await mongoose.connect(process.env.URI)
-        console.log("Successfully connected=> Mongoose")
-    }
-    catch (error){
-        console.error(error);}
-}
-
-connect();
 app.listen(8000, () =>{
     console.log("Sever starter Port=>8000");
 });
+
+
 
