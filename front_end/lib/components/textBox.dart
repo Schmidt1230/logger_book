@@ -21,10 +21,12 @@ class TextBox extends StatelessWidget{
           obscureText: obscureText,
          
                 decoration: InputDecoration(
-                hintText : hintText,
-                enabledBorder: OutlineInputBorder(
-                borderSide: BorderSide(
-                color: Colors.black)  ),),
+                  hintText : hintText,
+                  enabledBorder: OutlineInputBorder(
+                    borderSide: BorderSide(
+                      color: Colors.black)  
+                  ),
+                  ),
                
       ),
     );

@@ -10,8 +10,16 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      body: Container(
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          colors: [
+            Colors.blue[400]!,
+            Colors.blue,
+        ])
+      ),),
       bottomNavigationBar: GNav(
-        backgroundColor: Colors.lightBlueAccent,
+        backgroundColor: Colors.transparent,
         gap: 3,
         tabs: const [
           GButton(icon: Icons.home,
