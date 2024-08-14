@@ -2,10 +2,12 @@ import 'package:flutter/material.dart';
 
 class MyButton  extends StatelessWidget{
   final String text;
+  final VoidCallback onPressed; //This is to make the button functionality adaptable 
 
   const MyButton({
     super.key,
-    required this.text
+    required this.text,
+    required this.onPressed,
     });
   
   @override
@@ -18,7 +20,7 @@ class MyButton  extends StatelessWidget{
                   foregroundColor: Colors.lightBlueAccent,
                   backgroundColor: Colors.white,
                   ),
-                  onPressed: () => print('pressed'),
+                  onPressed: onPressed, //Changeable functionallity
                   child: Text(text,
                   style: TextStyle(
                     fontWeight: FontWeight.bold

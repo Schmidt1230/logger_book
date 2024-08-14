@@ -1,8 +1,13 @@
 import 'package:english_words/english_words.dart';
 import 'package:flutter/material.dart';
 import 'package:logger_book/pages/home.dart';
+import 'package:logger_book/pages/signup.dart';
 import 'package:provider/provider.dart';
 import 'pages/login.dart';
+
+
+// Your existing code here
+
 
 void main() {
   runApp(MyApp());
@@ -17,12 +22,13 @@ class MyApp extends StatelessWidget {
       create: (context) => MyAppState(),
     
       child: MaterialApp(
-        title: 'Namer App',
+        title: 'LoggerBook',
+        debugShowCheckedModeBanner: false,
         theme: ThemeData(
           useMaterial3: true,
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.lightBlueAccent),
         ),
-        home: LoginScreen(),
+        home: SignupScreen(),
       ),
     );
   }

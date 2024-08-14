@@ -64,12 +64,14 @@ class LoginScreen extends StatelessWidget {
               //Login Button
               MyButton(
                 text: 'Login',
+                onPressed: ()=>{print('Login')},
               ),
 
               const SizedBox(height: 10),
               //SignUp Button
               MyButton(
                 text: 'SignUp',
+                onPressed: ()=>{print('SignUp')},
               )
             ],
           ),

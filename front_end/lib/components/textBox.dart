@@ -19,6 +19,7 @@ class TextBox extends StatelessWidget{
         child: TextField(
           controller: controller,
           obscureText: obscureText,
+          textAlign: TextAlign.center, // Centers the hintText and user input
          
                 decoration: InputDecoration(
                   hintText : hintText,
