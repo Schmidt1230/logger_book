@@ -2,8 +2,7 @@ const express = require('express')
 
 //Automatically called when server is initiated
 const database = require('./config/database')
-
-
+const userModel = require('./model/user.model')
 const app = require('./app');
 
 app.get('/',(req,res)=>{
